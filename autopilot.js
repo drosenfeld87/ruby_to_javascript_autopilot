@@ -1,4 +1,5 @@
 var cars = [];
+add_one_car_per_day(cars, 10);
 
 function getNewCar() {
   var new_car =  {
@@ -30,4 +31,13 @@ function getDestination(car) {
   else if (car.city === 'London') {
     return 'Toronto'
   }
+}
+
+function getGasDisplay(gas_amount) {
+  return gas_amount
+}
+
+function fillUpGas(car) {
+  car.gas = 100;
+  console.log('Filled up to');
 }
